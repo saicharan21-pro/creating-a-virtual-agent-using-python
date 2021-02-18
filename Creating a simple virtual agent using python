@@ -1,0 +1,24 @@
+#Creating a simple virtual agent using python
+
+import speech_recognition
+
+jarvis=speech_recognition.Recognizer()
+
+
+
+print("Listening\n")
+def source():
+    audioCapture = jarvis.listen(source)
+
+def audioCapture():
+    recognitionText = jarvis.recognize_google(audioCapture)
+    print(recognitionText)
+
+    import pyttsx3
+
+    def speak(text):
+        engine = pyttsx3.init('sapi5')
+        engine.say(text)
+        engine.runAndWait()
+
+    speak("Hello Sai Charan how are you")
